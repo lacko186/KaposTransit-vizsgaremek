@@ -1,11 +1,28 @@
 # KaposTransit
 
+**VIZSGAREMEK PROJEKT** - Ez a webalkalmazás szakmai vizsgaremek keretében készült oktatási célra. Nem hivatalos szolgáltatás!
+
+
+### Projekt jellege
+Ez a webalkalmazás **vizsgaremek/szakdolgozat keretében készült oktatási célú demonstrációs projekt**.
+
+### Fontos figyelmeztetések
+- NEM hivatalos Kaposvári közlekedési alkalmazás
+- NEM áll kapcsolatban a Kaposvár Közlekedési Zrt.-vel vagy bármely hivatalos közlekedési szolgáltatóval
+- NEM kereskedelmi célú termék
+- Kizárólag oktatási/vizsga célú bemutató
+- Nem akarunk semmilyen jogokat megsérteni
+
+### Adathasználat
+- **MÁV GTFS adatok:** kizárólag oktatási demonstrációs célra
+- **Közlekedési információk:** nyilvános adatok alapján, csak tanulmányi célra
+- **Minden adat csak vizsgaremek keretében kerül felhasználásra**
+
 ## Telepítés
 
 ### XAMPP telepítése és indítása
 
 ### Adatbázisok importálása phpMyAdmin-ban:
-
     - Importálja a következő fájlokat:
      - `adatbazis_dump/kkzrt.sql`
      - `adatbazis_dump/kaposvar.sql`
@@ -35,18 +52,22 @@
    ```
 
 ### Környezeti változók beállítása:
-   
-   ```env
-SMTP_HOST=smtp.gmail.com
-SMTP_USERNAME=kapostransit@gmail.com
-SMTP_PASSWORD="jlvr ymug sqlj envp"
-SMTP_PORT=587
-SMTP_FROM=kapostransit@gmail.com
-SMTP_FROM_NAME="KaposTransit"
-```
 
+**Backend .env fájl:**
    ```env
-   PORT= 3306
+   SMTP_HOST=smtp.gmail.com
+   SMTP_USERNAME=your-email@gmail.com
+   SMTP_PASSWORD=your-app-password
+   SMTP_PORT=587
+   SMTP_FROM=your-email@gmail.com
+   SMTP_FROM_NAME="KaposTransit"
+   ```
+
+**FONTOS:** Saját Gmail fiókot és alkalmazásjelszót használjon. Gmail alkalmazásjelszó generálásához engedélyezze a 2FA-t, majd látogasson el a Google Account Settings oldalra.
+
+**Adatbázis konfiguráció:**
+   ```env
+   PORT=3000
    DB_HOST=localhost
    DB_USER=root
    DB_NAME=kaposvar
@@ -64,17 +85,19 @@ SMTP_FROM_NAME="KaposTransit"
 * Swagger UI: `http://localhost:3000/api-docs`
 * API végpontok dokumentáció
 
-### Bejelentkezés
+### Bejelentkezés (Demo adatok - vizsgaremek célra)
 
 ### Admin felület
 * URL: `http://localhost/kkzrt/admin.php`
-* felhasználónév: `Kapostransit`
-* jelszó: `KaposTransitAdmin997.@`
+* felhasználónév: `admin`
+* jelszó: `demo123`
 
 ### Felhasználói bejelentkezés
 * URL: `http://localhost/kkzrt/login.php`
-* email: `asd@gmail.com`
-* jelszó: `ASD123`
+* email: `demo@example.com`
+* jelszó: `demo123`
+
+**FIGYELEM:** Ezek demo/teszt adatok! Éles környezetben soha ne használjon ilyen egyszerű jelszavakat!
 
 ### Főbb funkciók
 * menetrend megtekintése
@@ -84,10 +107,12 @@ SMTP_FROM_NAME="KaposTransit"
 * hírek megtekintése
 * térkép megtekintése (Google Maps API kulcs szükséges)
 
-### Figyelmeztetés
+### Figyelmeztetések
+
 ### MÁV Adatok:
-* a rendszer MÁV adatokat használ
+* a rendszer MÁV adatokat használ **kizárólag vizsgaremek/oktatási célra**
 * az adatok használata költségekkel járhat
+* **nem célja a jogok megsértése**
 
 ### Figyelmeztetés a Google Maps költségekről 
 a térkép funkció használatához Google Maps API szükséges, ami költségekkel jár:
@@ -96,3 +121,15 @@ a térkép funkció használatához Google Maps API szükséges, ami költségek
 * nagy forgalom esetén ez gyorsan összeadódhat
 
 **Nem vállalok felelősséget az esetleges Google Maps API költségekért!**
+
+### Vizsgaremek státusz
+* Ez a projekt **szakmai vizsga** keretében készült
+* Célja a **tudás és képességek bemutatása**
+* **Nem kereskedelmi** és **nem hivatalos** célú
+* Minden felhasznált adat és szolgáltatás **oktatási célú**
+
+## Záró megjegyzés
+
+Ez a webalkalmazás kizárólag oktatási és demonstrációs célokat szolgál. A projekt célja a megszerzett tudás és programozási készségek bemutatása volt a vizsgaremek keretében. Minden felhasznált adat, név és információ kizárólag tanulmányi célból, jóhiszeműen került felhasználásra.
+
+**Projekt státusza:** Vizsgaremek - Oktatási célú bemutató
