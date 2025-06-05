@@ -24,7 +24,7 @@ if (!isset($_SESSION['user_id'])) {
     <link href ="footer.css" rel="stylesheet"> 
      
     <script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArXtWdllsylygVw5t_k-22sXUJn-jMU8k&libraries=places&callback=initMap&loading=async">
+    src="Googlemapsapi">
     </script>
 
     <style>
