@@ -89,13 +89,13 @@ Ez a webalkalmazás **vizsgaremek/szakdolgozat keretében készült oktatási c�
 
 ### Admin felület
 * URL: `http://localhost/kkzrt/admin.php`
-* felhasználónév: `admin`
-* jelszó: `demo123`
+* felhasználónév: `KaposTransit`
+* jelszó: `KaposTransitAdmin997.@`
 
 ### Felhasználói bejelentkezés
 * URL: `http://localhost/kkzrt/login.php`
-* email: `demo@example.com`
-* jelszó: `demo123`
+* email: `asd@gmail.com`
+* jelszó: `Abcde1234@`
 
 **FIGYELEM:** Ezek demo/teszt adatok! Éles környezetben soha ne használjon ilyen egyszerű jelszavakat!
 
