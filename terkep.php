@@ -21,8 +21,9 @@ if (!isset($_SESSION['user_id'])) {
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" rel="stylesheet">
     <script src="betolt.js"></script>
     <link href="header.css" rel="stylesheet">
+    
     <!-- Google Maps API -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRhpkQmqUbkJQpW73P_JkZK5kqNOYqjps&libraries=places&callback=initMap&loading=async" async defer></script>
+    <script src="Google Maps API" async defer></script>
     <script src="hetvegefigyelo.js"></script>
 
 <script>
@@ -1105,7 +1106,6 @@ document.addEventListener('DOMContentLoaded', () => {
     setupDropdownMenu();
 
     const script = document.createElement('script');
-    //script.src=`https://maps.googleapis.com/maps/api/js?key=Api=places&callback=initMap&loading=async`
     script.async = true;
     script.defer = true;
     document.head.appendChild(script);
