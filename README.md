@@ -46,7 +46,7 @@ SMTP_FROM_NAME="KaposTransit"
 ```
 
    ```env
-   PORT=
+   PORT= 3306
    DB_HOST=localhost
    DB_USER=root
    DB_NAME=kaposvar
