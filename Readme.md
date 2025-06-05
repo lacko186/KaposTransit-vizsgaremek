@@ -73,6 +73,7 @@ Ez a webalkalmazás **vizsgaremek/szakdolgozat keretében készült oktatási c�
    DB_NAME=kaposvar
    ```
 
+
 * `adatbazis_dump/` - sql fájlok importáláshoz
 * `dokumentacio/` - dokumentáció és képernyőképek
 * `kkzrt/` - fő projekt könyvtár
