@@ -2,6 +2,8 @@
 
 **VIZSGAREMEK PROJEKT** - Ez a webalkalmazás szakmai vizsgaremek keretében készült oktatási célra. Nem hivatalos szolgáltatás!
 
+[](https://youtu.be/wss1GX4RN0A?feature=shared)
+
 
 ### Projekt jellege
 Ez a webalkalmazás **vizsgaremek/szakdolgozat keretében készült oktatási célú demonstrációs projekt**.
